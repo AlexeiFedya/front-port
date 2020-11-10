@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.footer-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px 25px 15px 25px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(100, 99, 99);
+}
+
+@media (min-width: $landscape-phones-width) {
+    .footer-wrap {
+        padding: 15px 25px 15px 25px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .footer-wrap {
+        flex-direction: column;
+        padding: 19px 40px 19px 40px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .footer-wrap {
+        padding: 20px 70px 20px 70px;
+    }
+}
+
+@media (min-width: $large-desctop-width) {
+    .footer-wrap {
+        padding: 20px 100px 20px 100px;
+    }
+}

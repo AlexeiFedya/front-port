@@ -1,0 +1,115 @@
+@import '../../styles/variables.scss';
+
+.portfolio-project {
+    display: flex;
+    width: 100%;
+    padding: 0 0 20% 0;
+}
+
+
+// .portfolio-project__link {
+//     display: flex;
+//     align-items: center;
+//     border: none;
+//     border-radius: 10px;
+//     overflow: hidden;
+//     z-index: 10;
+
+// }
+
+
+.portfolio-project__hover {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+
+.portfolio-project__link-figure{
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    margin: 0;
+    left: 0;
+
+    animation: 20s slidy infinite;
+    img {
+        border-radius: 10px;
+    }
+}
+
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: 0%; }
+    }
+
+    .portfolio-project__text-wrap {
+        display: none;
+    }
+
+    @media (min-width: $landscape-phones-width)  {
+        .portfolio-project {
+            width: 450px;
+        }
+    }
+
+    @media (min-width: $desktop-width)  {
+        .portfolio-project {
+            display: flex;
+            width: 450px;
+            padding: 0px 2% 10% 2%;
+        }
+
+        .portfolio-project__text-wrap {
+            display: flex;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 4%;
+            opacity: 0;
+            z-index: 9999;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            transition: 1s;
+
+            &:hover {
+                opacity: 1;
+                transition: 1s;
+            }
+
+            p, h1 {
+                color: black;
+            }
+        }
+
+        .portfolio-project__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            h1 {
+                margin-bottom: 20%;
+                color: black;
+            }
+
+            p{
+                color: black;
+            }
+        }
+    }
+    

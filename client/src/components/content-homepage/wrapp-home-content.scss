@@ -1,0 +1,19 @@
+.wrapp-home-content {
+    height: calc(85vh - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+
+
+
+@media (min-height: 1300px) {
+    .wrapp-home-content {
+        height: calc(50vh - 108px);
+    }
+}
+

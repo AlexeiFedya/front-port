@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.wrap-content-skills-page{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+    background-image:linear-gradient(5deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0.6166841736694677) 50%, rgba(55,48,48,0.6110819327731092) 68%, rgba(65,57,57,0.5522584033613445) 80%), url("../../img/background1.jpg");
+}
+
+
+
+@media (min-width: $tablet-width) {
+    .wrap-content-skills-page{
+        height: calc(100vh - 106px);
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .wrap-content-skills-page{
+        height: calc(100vh - 108px);
+    }
+}
+
+// @media (min-width: $large-desctop-width) {
+//     .large-header__title {
+//         font-size: 90px;
+//         letter-spacing: 18px;
+//     }
+// }

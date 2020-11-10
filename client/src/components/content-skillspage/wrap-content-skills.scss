@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.wrap-content-skills {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+
+
+// @media (min-width: $landscape-phones-width) {
+//     .wrap-content-skills {
+//         width: 65%;
+//     }
+// }
+
+@media (min-width: $tablet-width) {
+    .wrap-content-skills {
+        flex-direction: row-reverse;
+        // align-items: center;
+        // width: 85%;
+        // margin-top: 20%;
+        // padding-top: 50px;
+    }
+}
+// @media (min-width: $desktop-width) {
+//     .wrap-content-skills {
+//         width: 70%;
+//         // margin-top: 6%;
+//         // padding-top: 50px;
+//     }
+// }
+
+// @media (min-width: $large-desctop-width) {
+//     .wrap-content-skills {
+//         width: 60%;
+//     }
+// }

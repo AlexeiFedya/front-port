@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+
+.page-header__li, .page-header__li-cv {
+    margin-top: 25px;
+    z-index: 10;
+}
+
+.page-header__li__a, .page-header__li-cv__a {
+    color:white;
+    font-size: $menu-p-font-size-mobile;
+    font-weight: 200;
+    text-decoration: none; 
+    // margin-left: 25px;
+    cursor: pointer;
+    opacity: 0.85;
+    transition: 1.5s;
+}
+
+
+@media (min-width: $landscape-phones-width) {
+    .page-header__li__a, .page-header__li-cv__a{
+        font-size: $menu-p-font-size-small;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .page-header__li, .page-header__li-cv{
+        margin-top: 0px;
+    }
+
+    .page-header__li__a, .page-header__li-cv__a { 
+        font-size:$menu-p-font-size-medium;
+        margin-left: 35px;
+        &:hover {
+            transition: 1.5s;
+            opacity: 0.5;
+        }
+    } 
+    
+
+    .page-header__li-cv__a {
+    padding: 7px;
+    border: 2px solid white;
+    border-radius: 12px;
+        &:hover {
+            color:black;
+            background-color: white;
+        }
+    }
+    
+}
+
+@media (min-width: $desktop-width) {
+    .page-header__li__a, .page-header__li-cv__a { 
+        font-size: $menu-p-font-size-large;
+        margin-left: 40px;
+    } 
+}
+
+@media (min-width: $large-desctop-width) {
+    .page-header__li__a, .page-header__li-cv__a { 
+        font-size: $menu-p-font-size-very-large;
+        margin-left: 50px;
+    } 
+}
+

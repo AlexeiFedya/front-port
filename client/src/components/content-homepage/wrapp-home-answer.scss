@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+
+.wrap-home-answer {
+    display: flex;
+    margin: 0 auto;
+    // width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+//   @media (min-width: $landscape-phones-width) {
+//     .main-title {
+//         font-size: 53px;
+//         letter-spacing: 10px;
+//     }
+// }
+
+// @media (min-width: $tablet-width) {
+//     .main-title {
+//         font-size: 70px;
+//         letter-spacing: 14px;
+
+//     }
+// }
+
+// @media (min-width: $desktop-width) {
+//   .wrap-home-answer {
+//     padding: 120px;
+//   }
+// }
+
+// @media (min-width: $large-desctop-width) {
+//     .main-title {
+//         font-size: 90px;
+//         letter-spacing: 18px;
+//     }
+// }

@@ -1,0 +1,86 @@
+@import '../../styles/variables.scss';
+
+.home-quest-for-me {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+
+    p {
+        font-size: $h-font-size-mobile;
+        font-weight: 500;
+    }
+}
+
+.home-for-me {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    opacity: 1;
+
+    p {
+        font-size: $p-font-size-mobile;;
+        font-weight: 200;
+        margin: 0;
+    }
+}
+
+@media (min-width: $landscape-phones-width) {
+    .home-quest-for-me {
+        p {
+            font-size: $h-font-size-small;
+        }
+    }
+
+    .home-for-me {
+        p {
+            font-size: $p-font-size-small;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .home-quest-for-me {
+        p {
+            font-size: $h-font-size-medium;
+        }
+    }
+
+    .home-for-me {
+        p {
+            font-size: $p-font-size-medium;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .home-quest-for-me {
+        p {
+            font-size: $h-font-size-large;
+        }
+    }
+
+    .home-for-me {
+        p {
+            font-size: $p-font-size-large;
+        }
+    }
+}
+
+@media (min-width: $large-desctop-width) {
+
+    .home-quest-for-me {
+        p {
+            font-size: $h-font-size-very-large;
+        }
+    }
+
+    .home-for-me {
+        p {
+            font-size: $p-font-size-very-large;
+        }
+    }
+}
