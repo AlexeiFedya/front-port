@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import { Skills } from './skills'
 
 import './skills.scss';
 import './wrap-content-skills-page.scss';
@@ -10,6 +10,39 @@ import './about-me.scss';
 import './animation.scss'
 
 export const ContentSkills = () => {
+
+    const skills = [
+        {   id:1, 
+            name: 'React/Redux',
+            classN: "progess-react",
+        },
+        {   id:2, 
+            name: 'Node.js/Express.js',
+            classN: "progess-node",
+        },
+        {   id:3, 
+            name: 'JavaScript',
+            classN: "progess-js",
+        },
+        {   id:4, 
+            name: 'HTML',
+            classN: "progess-html",
+        },
+        {   id:5, 
+            name: 'CSS/LESS/SASS',
+            classN: "progess-css",
+        },
+        {   id:6, 
+            name: 'REST API',
+            classN: "progess-api",
+        },
+        {   id:7, 
+            name: 'English',
+            classN: "progess-en",
+        }
+    ]
+
+
     return (
         <div className="wrap-content-skills-page">
             <div className="star star-1"></div>
@@ -18,107 +51,20 @@ export const ContentSkills = () => {
             <div className="star star-4"></div>
             <div className="star star-5"></div>
             <div className="wrap-content-skills">
-                <div className="skills">
-                    <div className="skill-item">
-                        <p className="skill-title">React</p>
-                        <div className="progress">
-                        <div className="progess-bar progess-react"></div>
-                        </div>
-                    </div>
-                    <div className="skill-item">
-                        <p className="skill-title">Redux</p>
-                        <div className="progress">
-                        <div className="progess-bar progess-redux"></div>
-                        </div>
-                    </div>
-                    <div className="skill-item">
-                        <p className="skill-title">JavaScript</p>
-                        <div className="progress">
-                        <div className="progess-bar progess-js"></div>
-                        </div>
-                    </div>
-                    <div className="skill-item">
-                        <p className="skill-title">HTML</p>
-                        <div className="progress">
-                        <div className="progess-bar progess-html"></div>
-                        </div>
-                    </div>
-                    <div className="skill-item">
-                        <p className="skill-title">CSS/LESS/SASS</p>
-                        <div className="progress">
-                        <div className="progess-bar progess-css"></div>
-                        </div>
-                    </div>
-                        <div className="skill-item">
-                            <p className="skill-title">REST API</p>
-                            <div className="progress">
-                            <div className="progess-bar progess-api"></div>
-                            </div>
-                    </div>
-                    <div className="skill-item">
-                        <p className="skill-title">English</p>
-                        <div className="progress">
-                        <div className="progess-bar progess-en"></div>
-                        </div>
-                    </div>
-                </div>
+                <Skills skills={skills}/>
                 <div className="skills about-me">
                     <p className="skill-title">
-                            I has 6+ month of experience writing single page applications. I has good knowledge of JavaScript,
-                        HTML5, CSS3/LESS/SASS, adaptive/responsive layout, version-control(git), npm, webpack and browsers
-                        APIs as well as  experience with popular frameworks and libraries keen on React and Redux. There was 
-                        experience in php. Pre-Intermediate level English (learning in Streamline school now)
+                        I has 8+ month of experience writing single page applications. Good knowledge and experience with modern Front-end frameworks React, functional programming. Good understanding Flux architecture.
+                        Understanding and experience of asynchronous request handling, partial page updates, and AJAX.  Experience with front-end build systems webpack. I has good knowledge of version-control ( Git ).
+                    </p>
+                    <p className="skill-title">
+                        I can read designs in Figma/Sketch and implement as code in React. I has good knowledge of adaptive/responsive layout and basic understanding of methodology BEM.
+                    </p>
+                    <p className="skill-title">
+                    There was experience in php.
                     </p>
                 </div>
             </div>
         </div>
-        // <main className="wrap-content-skills-page">
-        //     <div className="wrap-content-skills">
-        //         <div className="about-me">
-        //         I has 6+ month of experience writing single page application. I has good knowledge of JavaScript,
-        //         HTML5, CSS3/LESS/SASS, adaptive/responsive layout, version-control(git), npm, webpack and browsers
-        //         APIs as well as  experience with popular frameworks and libraries keen on React and Redux. There was 
-        //         experience in php. Pre-Intermediate level English (learning in Stream school now)
-        //         </div>
-        //         <div className="skills">
-        //             <div className="skill-item">
-        //                 <p className="skill-title">HTML</p>
-        //                 <div className="progress">
-        //                 <div className="progess-bar progess-html"></div>
-        //                 </div>
-        //             </div>
-        //             <div className="skill-item">
-        //                 <p className="skill-title">CSS</p>
-        //                 <div className="progress">
-        //                 <div className="progess-bar progess-css"></div>
-        //                 </div>
-        //             </div>
-        //             <div className="skill-item">
-        //                 <p className="skill-title">JS</p>
-        //                 <div className="progress">
-        //                 <div className="progess-bar progess-js"></div>
-        //                 </div>
-        //             </div>
-        //             <div className="skill-item">
-        //                 <p className="skill-title">JS</p>
-        //                 <div className="progress">
-        //                 <div className="progess-bar progess-js"></div>
-        //                 </div>
-        //             </div>
-        //             <div className="skill-item">
-        //                 <p className="skill-title">JS</p>
-        //                 <div className="progress">
-        //                 <div className="progess-bar progess-js"></div>
-        //                 </div>
-        //             </div>
-        //             <div className="skill-item">
-        //                 <p className="skill-title">JS</p>
-        //                 <div className="progress">
-        //                 <div className="progess-bar progess-js"></div>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </main>
     );
 };

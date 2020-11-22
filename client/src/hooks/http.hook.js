@@ -19,14 +19,11 @@ export const useHttp = () => {
             const response = await fetch(url, {method, body, headers})
             const data = await response.json()
             
-            console.log("БОДИ", body)
-            console.log("DATAAA", data)
-            console.log("RESPONSE", response)
 
             if (!response.ok) {
                 throw new Error(data.message || 'Что-то пошло не так')
             } else (
-                setresTrue("I am grateful for message. I`ll be in touch soon")
+                setresTrue(`I am grateful for message. I will be in touch soon`)
             )
             console.log(response)
 

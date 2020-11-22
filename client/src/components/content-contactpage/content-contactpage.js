@@ -51,6 +51,10 @@ export const ContentContact = () => {
             const data = await request('/api/mess/send', 'POST', {...input})
             console.log('Data', data)
         } catch (e) {}
+
+        setInput({
+            email: "", name: "", mess: ""
+        });
     }
 
     return (
@@ -58,6 +62,7 @@ export const ContentContact = () => {
         <PopUp 
                 ifError={error || resTrue}
                 popUpHandleClick={popUpHandleClick}/>
+                
         <div className="wrap-contactpage">
             <div className="star star-1"></div>
             <div className="star star-2"></div>

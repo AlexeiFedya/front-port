@@ -18,11 +18,11 @@
 
 // @media (min-width: $landscape-phones-width) {
 //     .wrap-content-skills {
-//         width: 65%;
+//         flex-direction: row-reverse;
 //     }
 // }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
     .wrap-content-skills {
         flex-direction: row-reverse;
         // align-items: center;

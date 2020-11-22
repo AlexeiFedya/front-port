@@ -76,7 +76,7 @@
         .portfolio-project__text-wrap {
             display: flex;
             position: absolute;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(242, 242, 242, 0.939);
             padding: 4%;
             opacity: 0;
             z-index: 9999;
@@ -90,26 +90,42 @@
                 opacity: 1;
                 transition: 1s;
             }
-
-            p, h1 {
-                color: black;
-            }
         }
+
+        
 
         .portfolio-project__text{
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+        }
 
-            h1 {
-                margin-bottom: 20%;
-                color: black;
-            }
+        .portfolio-project__text__h1 {
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: $h-font-size-very-large;
+            color: black;
+        }
 
-            p{
-                color: black;
+        .portfolio-project__text__a {
+            font-size: $p-font-size-medium;
+            text-decoration: none;
+            color: black;
+            transition: 1s;
+            margin-bottom: 5px;
+            
+            &:hover {
+                opacity: 0.7;
+                transition: 1s;
             }
+        }
+
+        .portfolio-project__text__p {
+            font-size: $p-font-size-medium;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 5px;
         }
     }
     

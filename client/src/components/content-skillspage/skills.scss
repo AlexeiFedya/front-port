@@ -9,17 +9,23 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
-    max-width: 350px;
+    max-width: 500px;
     margin: 0 auto;
     // width: 100%;
 }
 .skill-item {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
 .skill-title {
     font-size: $p-font-size-mobile;
     font-weight: 200;
+    margin: 0;
+}
+
+.skill-item__text {
+    font-size: 15px;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -52,11 +58,11 @@
     width: 70%;
 }
 
-.progess-redux {
-    width: 70%;
-}
 .progess-api {
-    width: 60%;
+    width: 55%;
+}
+.progess-node {
+    width: 30%;
 }
 @keyframes loading {
     from {
@@ -65,25 +71,18 @@
 }
 
 @media (min-width: $landscape-phones-width) {
-    .skill-item {
-        margin-bottom: 25px;
-    }
+    // .skill-item {
+    //     margin-bottom: 25px;
+    // }
     .skill-title {
         font-size: $p-font-size-small;
     }
+
 }
 
 @media (min-width: $tablet-width) {
     .skill-title {
         font-size: $p-font-size-medium;
-    }
-    .skill-item {
-        margin-bottom: 20px;
-    }
-    .skills {  
-        margin-left: 3%;
-        height: auto;
-        width: 400px;
     }
 }
 
@@ -91,8 +90,26 @@
     .skill-title {
         font-size: $p-font-size-large;
     }
+    // .skill-item {
+    //     margin-bottom: 15px;
+    // }
+
+    // .skills {  
+    //     max-width: 250px;
+    // }
+
     .skill-item {
-        margin-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+    .skills {  
+        margin-left: 3%;
+        height: auto;
+        max-width: 200px;
+    }
+
+    .skill-item__text {
+        font-size: 16px;
     }
 }
 
@@ -102,56 +119,7 @@
     }
 
     .skills {  
-        width: 500px;
+        max-width: 320px;
     }
+
 }
-
-// .skills {
-//     display: flex;
-//     flex-direction: column;
-//     margin-left: 4%;
-//     width: 50%;
-// }
-// .skill-item {
-//     margin-bottom: 10px;
-//   }
-//   .progress {
-//     background-color:  rgb(114, 114, 114);
-//     border-radius: 3px;
-//     height: 5px;
-//   }
-//   .progess-bar {
-//     background-color:white;
-//     border-radius: 3px;
-//     height: 5px;
-//     animation: loading 2s;
-// }
-
-// .progess-html {
-//     width: 90%;
-// }
-// .progess-css {
-//     width: 70%;
-// }
-// .progess-js {
-//     width: 65%;
-// }
-// .progess-en {
-//     width: 45%;
-// }
-
-// .progess-react {
-//     width: 70%;
-// }
-
-// .progess-redux {
-//     width: 70%;
-// }
-// .progess-api {
-//     width: 60%;
-// }
-// @keyframes loading {
-//     from {
-//         width: 0%;
-//     }
-// }
