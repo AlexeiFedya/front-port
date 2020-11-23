@@ -15,7 +15,7 @@ router.post(
     async(req, res)=> {
     try{
 
-        console.log("Bodyyy", req.body)
+        // console.log("Bodyyy", req.body)
 
         const errors = validationResult(req)
 
